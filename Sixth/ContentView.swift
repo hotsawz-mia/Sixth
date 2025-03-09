@@ -21,7 +21,7 @@ struct ContentView: View {
                 .foregroundStyle(.tint)
             Text(data)
                 .padding()
-            Button("Fetch Data") {
+            Button("GET IT!") {
                 fetchData()
             }
         }
