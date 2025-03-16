@@ -38,7 +38,7 @@ struct ContentView: View {
                 }
                 
                 if let data = data, let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any] {
-                    self.message = json["message"] as? String ?? "Sadly, no message has been found"
+                    self.message = json["message"] as? String ?? "No message has been found"
                 } else {
                     self.showError = true
                 }
